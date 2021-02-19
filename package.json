@@ -7,7 +7,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "lint": "eslint . --ignore-path .eslintignore",
-    "fix":"yarn run lint --fix"
+    "fix": "yarn run lint --fix"
   },
   "husky": {
     "hooks": {
@@ -15,10 +15,10 @@
     }
   },
   "lint-staged": {
-      "*.{js}": [
-        "yarn run fix",
-        "git add"
-      ]
+    "*.{js}": [
+      "yarn run fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "expo": "~40.0.0",

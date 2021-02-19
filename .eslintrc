@@ -3,6 +3,13 @@
         "@react-native-community"
     ],
     "rules": {
-        "quotes" : [2,"double",{"avoidEscape":true}]
+        "quotes" : [2,"double",{"avoidEscape":true}],
+        "react/prop-types": "off",
+        "no-unused-vars": "error",
+        "no-useless-return": "error",
+        "no-return-await": "error",
+        "no-else-return": "error",
+        "no-empty":"error",
+        "eqeqeq":"error"
     }
 }
