@@ -1,11 +1,11 @@
 import React from "react";
 import { Searchbar } from "react-native-paper";
-import { SafeAreaView, StatusBar, StyleSheet, Text, View } from "react-native";
+import { TextInput,SafeAreaView, StatusBar, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style={{color:"#fff"}} />
       <SafeAreaView style={styles.container}>
         <View style={styles.search}>
           <Searchbar placeholder="Search" />
