@@ -1,6 +1,28 @@
 {
-    "extends": "@react-native-community",
-    "rules":{
-        "quotes":[2,"double",{"avoidEscape":true}]
-    }
+    "extends": [
+        "@react-native-community",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "rules": {
+        "react/prop-types": "off",
+        "no-console": "error",
+        "no-alert": "error",
+        "react/display-name": 0,
+        "react-hooks/exhaustive-deps": 0,
+        "sort-imports": "off",
+        "prettier/prettier": "error",
+        "import/first": "error",
+        "import/no-duplicates": "error",
+        "react/jsx-no-target-blank": 0,
+        "no-unused-vars": "error",
+        "no-useless-return": "error",
+        "no-return-await": "error",
+        "no-else-return": "error",
+        "no-async-promise-executor": 0,
+        "import/no-named-as-default": 0
+      }
 }
