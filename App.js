@@ -1,5 +1,4 @@
 import React from "react";
-import { Searchbar } from "react-native-paper";
 import {
   TextInput,
   SafeAreaView,
@@ -8,20 +7,13 @@ import {
   Text,
   View,
 } from "react-native";
+import { RestaurantScreen } from "./src/features/restaurants/screens";
 
 export default function App() {
   return (
-    <>
-      <StatusBar style={{ color: "#fff" }} />
-      <SafeAreaView style={styles.container}>
-        <View style={styles.search}>
-          <Searchbar placeholder="Search" />
-        </View>
-        <View style={styles.list}>
-          <Text>List</Text>
-        </View>
-      </SafeAreaView>
-    </>
+   <>
+    <RestaurantScreen/>
+   </>
   );
 }
 
