@@ -2,32 +2,32 @@ import React from "react";
 import { Searchbar } from "react-native-paper";
 import { SafeAreaView,  StatusBar,  StyleSheet,  Text,  View} from "react-native";
 import {RestaurantInfoCard} from "../../components"
+import styled from "styled-components/native"
+
+const SafeAreaViewWrapper=styled.SafeAreaView`
+display:flex;
+`
+const SearchWrapper=styled.View`
+padding: 16px;
+`
+const RestaurantList=styled.View`
+display:flex;
+padding: 16px;
+`
+
 
 export const RestaurantScreen=()=> {
   return (
     <>
       <StatusBar />
-      <SafeAreaView style={styles.container}>
-        <View style={styles.search}>
+      <SafeAreaViewWrapper>
+        <SearchWrapper>
           <Searchbar placeholder="Search" />
-        </View>
-        <View style={styles.list}>
+        </SearchWrapper>
+        <RestaurantList>
           <RestaurantInfoCard/>
-        </View>
-      </SafeAreaView>
+        </RestaurantList>
+      </SafeAreaViewWrapper>
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  search: {
-    padding: 16,
-  },
-  list: {
-    flex: 1,
-    padding: 16,
-  },
-});
