@@ -1,1 +1,1 @@
-export {RestaurantInfo} from "./RestaurantInfoCard"
+export {RestaurantInfoCard} from "./RestaurantInfoCard"
