@@ -1,8 +1,8 @@
 import React from "react";
 import { StyleSheet } from "react-native";
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { Card, Title } from 'react-native-paper';
 
-export const RestaurantInfo = ({restaurant={}})=>{
+export const RestaurantInfoCard = ({restaurant={}})=>{
 
     const {
         name="Some Restaurant",
@@ -17,8 +17,7 @@ export const RestaurantInfo = ({restaurant={}})=>{
     <Card elevation={5} style={styles.card}>
     <Card.Cover key={`${name}-card-cover`} source={{ uri: photos[0] }} />
     <Card.Content key={`${name}-card-content`}>
-      <Title>Card title</Title>
-      <Paragraph>Card content</Paragraph>
+      <Title style={styles.title}>{name}</Title>
     </Card.Content>
     </Card>
    </>
@@ -28,4 +27,7 @@ const styles = StyleSheet.create({
     card : {
         backgroundColor: "white"
     },
+    title:{
+        paddingTop:8
+    }
 })
